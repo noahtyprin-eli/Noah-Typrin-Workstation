@@ -1,1 +1,218 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Inter', 'sans-serif'] }
+      }
+    }
+  }
+</script>
+</head>
+<body class="font-sans text-neutral-900">
+
+<!-- NAV -->
+<nav class="px-8 py-6 flex items-center justify-between border-b border-neutral-100">
+  <a href="#" class="font-semibold text-sm tracking-wide">Alex Chen</a>
+  <div class="flex gap-8 text-sm text-neutral-500">
+    <a href="#projects" class="hover:text-black transition-colors">Projects</a>
+    <a href="#about" class="hover:text-black transition-colors">About</a>
+    <a href="#contact" class="hover:text-black transition-colors uppercase tracking-widest text-xs font-medium">Get in Touch</a>
+  </div>
+</nav>
+
+<!-- HERO IMAGE -->
+<div class="w-full h-[60vh] bg-neutral-200 overflow-hidden">
+  <img
+    src="https://images.unsplash.com/photo-1517976547714-720226b864c1?w=1400&q=80"
+    alt="Rocket launch"
+    class="w-full h-full object-cover"
+  />
+</div>
+
+<!-- HERO TEXT -->
+<section class="px-8 py-16 max-w-3xl">
+  <p class="text-xs uppercase tracking-widest text-neutral-400 mb-4">Aerospace Engineer</p>
+  <h1 class="text-4xl font-light leading-snug text-neutral-900 mb-6">
+    Structural analysis, satellite systems,<br/>and advanced energy storage —<br/>with a goal to design spacecraft.
+  </h1>
+  <p class="text-base text-neutral-500 leading-relaxed max-w-xl">
+    I bring rigorous engineering analysis across structures, space systems, and battery design. Currently seeking roles in spacecraft development and space vehicle engineering.
+  </p>
+  <div class="flex gap-4 mt-8">
+    <a href="#projects" class="text-sm text-black underline underline-offset-4 hover:text-neutral-500 transition-colors">See Projects</a>
+    <a href="#" class="text-sm text-neutral-400 underline underline-offset-4 hover:text-black transition-colors">LinkedIn</a>
+    <a href="#" class="text-sm text-neutral-400 underline underline-offset-4 hover:text-black transition-colors">Resume</a>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="px-8 pb-24">
+  <h2 class="text-xs uppercase tracking-widest text-neutral-400 mb-8 border-t border-neutral-100 pt-10">Selected Projects</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <div class="card cursor-pointer">
+      <div class="overflow-hidden aspect-[4/3] bg-neutral-100 relative">
+        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&q=80" alt="Satellite" class="w-full h-full object-cover"/>
+        <div class="overlay absolute inset-0 bg-black/40 flex items-end p-4">
+          <span class="text-white text-xs tracking-widest uppercase">View Project</span>
+        </div>
+      </div>
+      <div class="pt-3">
+        <p class="text-xs text-neutral-400 mb-1">2025</p>
+        <h3 class="text-sm font-medium">Satellite Bus Structural Analysis</h3>
+      </div>
+    </div>
+
+    <div class="card cursor-pointer">
+      <div class="overflow-hidden aspect-[4/3] bg-neutral-100 relative">
+        <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800&q=80" alt="Space" class="w-full h-full object-cover"/>
+        <div class="overlay absolute inset-0 bg-black/40 flex items-end p-4">
+          <span class="text-white text-xs tracking-widest uppercase">View Project</span>
+        </div>
+      </div>
+      <div class="pt-3">
+        <p class="text-xs text-neutral-400 mb-1">2024</p>
+        <h3 class="text-sm font-medium">CubeSat Mission Design</h3>
+      </div>
+    </div>
+
+    <div class="card cursor-pointer">
+      <div class="overflow-hidden aspect-[4/3] bg-neutral-100 relative">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80" alt="Battery tech" class="w-full h-full object-cover"/>
+        <div class="overlay absolute inset-0 bg-black/40 flex items-end p-4">
+          <span class="text-white text-xs tracking-widest uppercase">View Project</span>
+        </div>
+      </div>
+      <div class="pt-3">
+        <p class="text-xs text-neutral-400 mb-1">2024</p>
+        <h3 class="text-sm font-medium">Aerospace Battery Pack Design</h3>
+      </div>
+    </div>
+
+    <div class="card cursor-pointer">
+      <div class="overflow-hidden aspect-[4/3] bg-neutral-100 relative">
+        <img src="https://images.unsplash.com/photo-1581093806997-124204d9fa9d?w=800&q=80" alt="Composites" class="w-full h-full object-cover"/>
+        <div class="overlay absolute inset-0 bg-black/40 flex items-end p-4">
+          <span class="text-white text-xs tracking-widest uppercase">View Project</span>
+        </div>
+      </div>
+      <div class="pt-3">
+        <p class="text-xs text-neutral-400 mb-1">2023</p>
+        <h3 class="text-sm font-medium">Composite Panel Characterization</h3>
+      </div>
+    </div>
+
+    <div class="card cursor-pointer">
+      <div class="overflow-hidden aspect-[4/3] bg-neutral-100 relative">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" alt="Orbit" class="w-full h-full object-cover"/>
+        <div class="overlay absolute inset-0 bg-black/40 flex items-end p-4">
+          <span class="text-white text-xs tracking-widest uppercase">View Project</span>
+        </div>
+      </div>
+      <div class="pt-3">
+        <p class="text-xs text-neutral-400 mb-1">2023</p>
+        <h3 class="text-sm font-medium">Orbital Thermal Analysis</h3>
+      </div>
+    </div>
+
+    <div class="card cursor-pointer">
+      <div class="overflow-hidden aspect-[4/3] bg-neutral-100 relative">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Engineering" class="w-full h-full object-cover"/>
+        <div class="overlay absolute inset-0 bg-black/40 flex items-end p-4">
+          <span class="text-white text-xs tracking-widest uppercase">View Project</span>
+        </div>
+      </div>
+      <div class="pt-3">
+        <p class="text-xs text-neutral-400 mb-1">2022</p>
+        <h3 class="text-sm font-medium">Launch Vehicle Load Path Study</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mt-10">
+    <a href="#" class="text-sm uppercase tracking-widest text-neutral-400 hover:text-black transition-colors underline underline-offset-4">All Projects</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="px-8 py-20 bg-neutral-50">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+    <div>
+      <h2 class="text-xs uppercase tracking-widest text-neutral-400 mb-6">About</h2>
+      <p class="text-base text-neutral-700 leading-relaxed mb-4 font-light">
+        I am an aerospace engineer with experience in structural mechanics, satellite systems, and advanced battery technologies — and a clear goal: to work on spacecraft.
+      </p>
+      <p class="text-base text-neutral-700 leading-relaxed mb-4 font-light">
+        Whether it's running FEA on a primary structure, sizing a power system for orbit, or characterizing composite materials, I work carefully and finish what I start.
+      </p>
+      <p class="text-base text-neutral-700 leading-relaxed font-light">
+        I'm looking for roles in spacecraft design and development where I can grow alongside people who take the work seriously.
+      </p>
+    </div>
+    <div class="space-y-8 pt-8">
+      <div>
+        <p class="text-xs uppercase tracking-widest text-neutral-400 mb-2">Specializations</p>
+        <ul class="text-sm text-neutral-600 space-y-1 font-light">
+          <li>Structural analysis & FEA</li>
+          <li>Satellite & space systems</li>
+          <li>Battery & energy storage design</li>
+          <li>Composite materials</li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-neutral-400 mb-2">Tools</p>
+        <p class="text-sm text-neutral-600 font-light">ANSYS, MATLAB, SolidWorks, STK, Python</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-neutral-400 mb-2">Education</p>
+        <p class="text-sm text-neutral-600 font-light">B.S. Aerospace Engineering, 2025</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT STEPS -->
+<section class="px-8 py-20 max-w-5xl mx-auto">
+  <h2 class="text-xs uppercase tracking-widest text-neutral-400 mb-12 border-t border-neutral-100 pt-10">Next Steps</h2>
+  <div class="grid md:grid-cols-3 gap-10">
+    <div>
+      <p class="text-3xl font-light text-neutral-200 mb-3">1.</p>
+      <h3 class="text-sm font-medium mb-2">Get in Touch</h3>
+      <p class="text-sm text-neutral-500 leading-relaxed font-light">Reach out so we can discuss your team, the role, and where I can contribute.</p>
+    </div>
+    <div>
+      <p class="text-3xl font-light text-neutral-200 mb-3">2.</p>
+      <h3 class="text-sm font-medium mb-2">Technical Discussion</h3>
+      <p class="text-sm text-neutral-500 leading-relaxed font-light">We'll walk through the engineering challenges and how my background maps to your needs.</p>
+    </div>
+    <div>
+      <p class="text-3xl font-light text-neutral-200 mb-3">3.</p>
+      <h3 class="text-sm font-medium mb-2">Start Building</h3>
+      <p class="text-sm text-neutral-500 leading-relaxed font-light">Agree on a start date and get to work on something worth launching.</p>
+    </div>
+  </div>
+  <div class="mt-12">
+    <a href="mailto:alex@example.com" class="inline-block bg-black text-white text-xs uppercase tracking-widest px-8 py-4 hover:bg-neutral-700 transition-colors">Get in Touch to Begin</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="border-t border-neutral-100 px-8 py-10">
+  <div class="flex items-center justify-between text-xs text-neutral-400">
+    <span>Alex Chen · <a href="mailto:alex@example.com" class="hover:text-black transition-colors">alex@example.com</a></span>
+    <span>Aerospace Engineer</span>
+  </div>
+</footer>
+
+</body>
+</html>
